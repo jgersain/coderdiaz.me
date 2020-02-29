@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "module": "CommonJS",
+    "target": "ES5",
+    "lib": ["ES5", "ES6", "ES7", "ES2017", "DOM"],
+    "sourceMap": true,
+    "jsx": "react",
+    "moduleResolution": "node",
+    "strict": true,
+    "noEmit": true
+  },
+  "include": ["./src/**/*"],
+  "exclude": ["node_modules", "public", "cache"]
+}

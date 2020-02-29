@@ -1,0 +1,25 @@
+# Ignored folders
+node_modules
+public
+.cache
+dist
+
+# Ignored single files
+.env
+
+# Typescript v1 declaration files
+typings/
+
+# Optional npm cache directory
+.npm
+
+# Logs
+yarn-error.log
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Mac files
+.DS_Store
