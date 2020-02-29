@@ -1,0 +1,7 @@
+[build]
+  publish = "public/"
+  command = "gatsby build"
+  
+  [build.environment]
+    NODE_VERSION = "12.16.1"
+    BASE_URL = "https://coderdiaz.dev"
