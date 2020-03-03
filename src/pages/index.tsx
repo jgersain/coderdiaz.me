@@ -1,9 +1,23 @@
 import * as React from "react";
+import { graphql } from "gatsby";
 import HeroSection from "../partials/HeroSection";
 import Dribbble from "../partials/Dribbble";
 import Footer from "../partials/Footer";
+import { IShot } from "../interfaces";
 
-const IndexPage = () => {
+interface IIndexPageProps {
+  data: GraphQLData;
+};
+
+interface GraphQLData {
+  allDribbbleShot: {
+    nodes: IShot[];
+  };
+};
+
+const IndexPage = ({ data }: IIndexPageProps) => {
+  const { allDribbbleShot } = data;
+
   return (
     <>
       <HeroSection />
@@ -56,7 +70,7 @@ const IndexPage = () => {
             </defs>
             <rect width="360" height="460" fill="url(#svg-pattern-squares-1)"></rect>
           </svg>
-          <Dribbble />
+          <Dribbble shots={allDribbbleShot.nodes} />
         </div>
       </section>
       <section className="bg-darken py-10 overflow-hidden">
@@ -68,12 +82,12 @@ const IndexPage = () => {
           </h2>
           <div className="mt-8 flex lg:flex-shrink-0 lg:mt-0">
             <div className="inline-flex rounded-md shadow">
-              <a href="#" className="inline-flex items-center justify-center px-8 py-4 text-base leading-6 rounded-md text-white font-medium bg-green-500 hover:bg-green-400 focus:outline-none focus:bg-green-500 focus:shadow-outline transition duration-150 ease-in-out">
+              <a href="#" className="inline-flex items-center justify-center px-8 py-4 leading-6 rounded-md text-white font-medium bg-green-500 hover:bg-green-400 focus:outline-none focus:bg-green-500 focus:shadow-outline transition duration-150 ease-in-out">
                 Hire me
               </a>
             </div>
             <div className="ml-3 inline-flex rounded-md shadow">
-              <a href="#" className="inline-flex items-center justify-center px-8 py-4 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-dark-500 hover:bg-dark-400 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
+              <a href="#" className="inline-flex items-center justify-center px-8 py-4 border border-transparent leading-6 font-medium rounded-md text-white bg-dark-500 hover:bg-dark-400 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
                 Learn more
               </a>
             </div>
@@ -158,3 +172,22 @@ const IndexPage = () => {
 };
 
 export default IndexPage;
+
+export const query = graphql`
+  query {
+    allDribbbleShot(limit: 5, sort: { fields: [published], order: DESC }) {
+      nodes {
+        id
+        title
+        cover
+        localCover {
+          childImageSharp {
+            fluid(maxWidth: 600) {
+              ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+        }
+      }
+    }
+  }
+`;
