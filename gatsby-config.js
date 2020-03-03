@@ -6,9 +6,17 @@
 
 module.exports = {
   plugins: [
+    {
+      resolve: `gatsby-source-dribbble`,
+      options: {
+        access_token: `c45be162c0dae8c4c3ea96a4ee734d910149c29b3f3c16abe8ed3595dc118e54`,
+      },
+    },
     `gatsby-plugin-typescript`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-postcss`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-plugin-web-font-loader`,
       options: {
