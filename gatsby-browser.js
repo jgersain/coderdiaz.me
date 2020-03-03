@@ -4,4 +4,5 @@
  * See: https://www.gatsbyjs.org/docs/browser-apis/
  */
 
-import "./src/css/style.css";
+import './src/css/fonts.css';
+import './src/css/style.css';
