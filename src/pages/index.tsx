@@ -81,7 +81,7 @@ const IndexPage = () => {
         </div>
       </section>
       <section className="py-20 overflow-hidden">
-        <div className="container px-4 sm:px-8 md:px-8 lg:max-w-screen-lg mx-auto relative">
+        <div className="container px-4 sm:px-8 md:px-8 lg:px-0 lg:max-w-screen-lg mx-auto relative">
           <h2 className="text-white text-2xl">Open Source</h2>
           <p className="text-gray-400 font-lg w-100 tracking-wide leading-relaxed mt-1">I volunteer in part time creating libraries and sharing resources to help people create web apps and a better world.</p>
           <svg className="hidden lg:block absolute left-full transform -translate-x-1/2 -translate-y-50" width="360" height="750" fill="none" viewBox="0 0 360 750">
