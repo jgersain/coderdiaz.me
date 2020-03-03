@@ -182,7 +182,7 @@ export const query = graphql`
         cover
         localCover {
           childImageSharp {
-            fluid(maxWidth: 600) {
+            fluid(maxWidth: 600, quality: 80) {
               ...GatsbyImageSharpFluid_withWebp
             }
           }
