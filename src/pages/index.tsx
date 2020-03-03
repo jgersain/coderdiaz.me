@@ -35,7 +35,7 @@ const IndexPage = () => {
                 </dd>
               </dl>
             </div>
-            <div className="col-span-12 md:col-span-8 text-base sm:text-lg">
+            <div className="col-span-12 md:col-span-8 sm:text-lg">
               <p className="text-gray-500 leading-loose">Currently working as a Tech Lead of Developers Squad at <a className="text-white underline" href="https://bedu.org">BEDU Education</a>. I mostly do front-end but I also do back-end development.</p>
               <p className="text-gray-500 leading-loose mt-4">I have experience working as a freelance and companies (Yeah! Startups too), but I'm ready for visit other cities and work for any development studio.</p>
               <p className="text-gray-500 leading-loose mt-4">Now, I'm learning <span className="text-white">Flutter</span> to create an application to manage my finances and subscriptions. I saty active writting <a className="text-white underline" href="https://twitter.com/coderdiaz">tweets</a>, taking <a className="text-white underline" href="https://vsco.co/coderdiaz">photos</a> and pushing my <a className="text-white underline" href="https://github.com/coderdiaz">codes</a> for you.</p>
@@ -44,11 +44,11 @@ const IndexPage = () => {
           </div>
         </div>
       </section>
-      <section className="pt-10 pb-20">
+      <section className="pt-10 pb-20 overflow-hidden">
         <div className="container px-4 sm:px-8 md:px-8 lg:max-w-screen-lg mx-auto relative">
           <h3 className="text-2xl text-white">Experiments</h3>
-          <h4 className="text-lg text-gray-400">My latest experiments uploaded to <span className="text-pink-500">Dribbble</span></h4>
-          <svg className="hidden lg:block absolute right-full transform translate-x-1/2 translate-y-125" width="360" height="460" fill="none" viewBox="0 0 360 460">
+          <h4 className="text-lg text-gray-400">My latest experiments uploaded to <span className="text-pink-500 font-medium">Dribbble</span></h4>
+          <svg className="hidden lg:block absolute right-full transform translate-x-1/2 translate-y-100" width="360" height="460" fill="none" viewBox="0 0 360 460">
             <defs>
               <pattern id="svg-pattern-squares-1" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
                 <rect x="0" y="0" width="4" height="4" className="text-dark-500" fill="currentColor"></rect>
