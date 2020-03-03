@@ -10,6 +10,16 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-postcss`,
     {
+      resolve: `gatsby-plugin-web-font-loader`,
+      options: {
+        custom: {
+          urls: [
+            `https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Rubik:400,500,700,900&display=swap`
+          ],
+        },
+      },
+    },
+    {
       resolve: `gatsby-plugin-purgecss`,
       options: {
         tailwind: true,
