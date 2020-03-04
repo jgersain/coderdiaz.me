@@ -52,7 +52,7 @@ const IndexPage = () => {
         <div className="container px-4 sm:px-8 md:px-8 lg:max-w-screen-lg mx-auto relative">
           <h3 className="text-2xl text-white">Experiments</h3>
           <h4 className="text-lg text-gray-400">
-            My latest experiments uploaded to <a href="https://dribbble.com/coderdiaz" className="text-pink-500 font-medium underline">Dribbble</a>
+            My latest experiments uploaded to <a href="https://dribbble.com/coderdiaz" className="text-pink-400 font-medium underline">Dribbble</a>
           </h4>
           <svg className="hidden lg:block absolute right-full transform translate-x-1/2 translate-y-100" width="360" height="460" fill="none" viewBox="0 0 360 460">
             <defs>
@@ -74,7 +74,7 @@ const IndexPage = () => {
           </h2>
           <div className="mt-8 flex lg:flex-shrink-0 lg:mt-0">
             <div className="inline-flex rounded-md shadow">
-              <a href="#" className="inline-flex items-center justify-center px-8 py-4 leading-6 rounded-md text-white font-medium bg-green-500 hover:bg-green-400 focus:outline-none focus:bg-green-500 focus:shadow-outline transition duration-150 ease-in-out">
+              <a href="#" className="inline-flex items-center justify-center px-8 py-4 leading-6 rounded-md text-dark-600 font-medium bg-green-500 hover:bg-green-400 focus:outline-none focus:bg-green-500 focus:shadow-outline transition duration-150 ease-in-out">
                 Hire me
               </a>
             </div>
@@ -92,11 +92,11 @@ const IndexPage = () => {
           <p className="text-gray-400 font-lg w-100 tracking-wide leading-relaxed mt-1">I volunteer in part time creating libraries and sharing resources to help people create web apps and a better world.</p>
           <svg className="hidden lg:block absolute left-full transform -translate-x-1/2 -translate-y-50" width="360" height="750" fill="none" viewBox="0 0 360 750">
             <defs>
-              <pattern id="svg-pattern-squares-1" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+              <pattern id="svg-pattern-squares-3" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
                 <rect x="0" y="0" width="4" height="4" className="text-dark-500" fill="currentColor"></rect>
               </pattern>
             </defs>
-            <rect width="360" height="750" fill="url(#svg-pattern-squares-1)"></rect>
+            <rect width="360" height="750" fill="url(#svg-pattern-squares-3)"></rect>
           </svg>
           <div className="grid gap-10 relative pt-20 pb-0 md:py-20 sm:grid-cols-6 lg:grid-cols-12 lg:row-gap-12">
             <div className="sm:col-span-3 md:col-span-2 lg:col-span-3">

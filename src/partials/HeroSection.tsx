@@ -9,7 +9,7 @@ const HeroSection = () => {
         <div className="relative z-10 pb-8 sm:pb-16 md:pb-20 lg:max-w-xl lg:py-32 lg:pr-24 lg:w-full xl:pb-32">
           <div className="mt-12 mx-auto max-w-screen-xl px-4 sm:mt-16 sm:px-6 md:px-4 md:mt-16 lg:mt-0 lg:px-0 xl:mt-28">
             <Logotype width={180} className="fill-current text-gray-500" />
-            <p className="block text-dark-300 text-base uppercase pt-12">Hello, my name is</p>
+            <p className="block text-dark-200 text-base uppercase pt-12">Hello, my name is</p>
             <h1 className="block text-white font-montserrat font-bold text-3xl sm:text-4xl -mb-1">Javier Diaz</h1>
             <h2 className="block text-green-500 font-montserrat font-bold text-xl sm:text-3xl mb-8">I build stuff for the web</h2>
             <p className="block text-gray-400">I'm a Software Engineer and teacher based on Mexico City, Mexico. I build outstanding, high-quality websites and web applications.</p>
