@@ -1,23 +1,9 @@
 import * as React from "react";
-import { graphql } from "gatsby";
 import HeroSection from "../partials/HeroSection";
 import Dribbble from "../partials/Dribbble";
 import Footer from "../partials/Footer";
-import { IShot } from "../interfaces";
 
-interface IIndexPageProps {
-  data: GraphQLData;
-};
-
-interface GraphQLData {
-  allDribbbleShot: {
-    nodes: IShot[];
-  };
-};
-
-const IndexPage = ({ data }: IIndexPageProps) => {
-  const { allDribbbleShot } = data;
-
+const IndexPage = () => {
   return (
     <>
       <HeroSection />
@@ -61,7 +47,9 @@ const IndexPage = ({ data }: IIndexPageProps) => {
       <section className="pt-10 pb-20 overflow-hidden">
         <div className="container px-4 sm:px-8 md:px-8 lg:max-w-screen-lg mx-auto relative">
           <h3 className="text-2xl text-white">Experiments</h3>
-          <h4 className="text-lg text-gray-400">My latest experiments uploaded to <span className="text-pink-500 font-medium">Dribbble</span></h4>
+          <h4 className="text-lg text-gray-400">
+            My latest experiments uploaded to <a href="https://dribbble.com/coderdiaz" className="text-pink-500 font-medium underline">Dribbble</a>
+          </h4>
           <svg className="hidden lg:block absolute right-full transform translate-x-1/2 translate-y-100" width="360" height="460" fill="none" viewBox="0 0 360 460">
             <defs>
               <pattern id="svg-pattern-squares-1" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
@@ -70,7 +58,7 @@ const IndexPage = ({ data }: IIndexPageProps) => {
             </defs>
             <rect width="360" height="460" fill="url(#svg-pattern-squares-1)"></rect>
           </svg>
-          <Dribbble shots={allDribbbleShot.nodes} />
+          <Dribbble />
         </div>
       </section>
       <section className="bg-darken py-10 overflow-hidden">
@@ -108,7 +96,7 @@ const IndexPage = ({ data }: IIndexPageProps) => {
           </svg>
           <div className="grid gap-10 relative pt-20 pb-0 md:py-20 sm:grid-cols-6 lg:grid-cols-12 lg:row-gap-12">
             <div className="sm:col-span-3 md:col-span-2 lg:col-span-3">
-              <span className="block font-bold font-montserrat text-white text-lg">vue-tiny-pagination</span>
+              <a href="https://github.com/coderdiaz/vue-tiny-pagination" className="block font-bold font-montserrat text-white hover:text-gray-300 text-lg underline">vue-tiny-pagination</a>
               <p className="text-gray-500 text-base leading-relaxed pt-2">A Vue component to create a tiny pagination with flexbox.</p>
               <div className="flex items-center text-gray-400 text-base pt-4">
                 <span className="w-3 h-3 rounded-full bg-green-500 mr-2" />
@@ -116,7 +104,7 @@ const IndexPage = ({ data }: IIndexPageProps) => {
               </div>
             </div>
             <div className="sm:col-span-3 md:col-span-2 lg:col-span-3">
-              <span className="block font-bold font-montserrat text-white text-lg">yell-vscode-theme</span>
+              <a href="https://github.com/coderdiaz/yell-vscode-theme" className="block font-bold font-montserrat text-white hover:text-gray-300 text-lg underline">yell-vscode-theme</a>
               <p className="text-gray-500 text-base leading-relaxed pt-2">A VS Code theme for dark lovers with accessible colors.</p>
               <div className="flex items-center text-gray-400 text-base pt-4">
                 <span className="w-3 h-3 rounded-full bg-gray-600 mr-2" />
@@ -124,7 +112,7 @@ const IndexPage = ({ data }: IIndexPageProps) => {
               </div>
             </div>
             <div className="sm:col-span-3 md:col-span-2 lg:col-span-3">
-              <span className="block font-bold font-montserrat text-white text-lg">react-card-brand</span>
+              <a href="https://github.com/coderdiaz/react-card-brand" className="block font-bold font-montserrat text-white hover:text-gray-300 text-lg underline">react-card-brand</a>
               <p className="text-gray-500 text-base leading-relaxed pt-2">A zero-dependency React Hook to show the brand from a card type.</p>
               <div className="flex items-center text-gray-400 text-base pt-4">
                 <span className="w-3 h-3 rounded-full bg-alternative-600 mr-2" />
@@ -132,7 +120,7 @@ const IndexPage = ({ data }: IIndexPageProps) => {
               </div>
             </div>
             <div className="hidden sm:block sm:col-span-3 md:col-span-2 lg:col-span-3">
-              <span className="block font-bold font-montserrat text-white text-lg">vue-status-indicator</span>
+              <a href="https://github.com/coderdiaz/vue-status-indicator" className="block font-bold font-montserrat text-white hover:text-gray-300 text-lg underline">vue-status-indicator</a>
               <p className="text-gray-500 text-base leading-relaxed pt-2">A Vue component to show status indicator as colored dots.</p>
               <div className="flex items-center text-gray-400 text-base pt-4">
                 <span className="w-3 h-3 rounded-full bg-green-600 mr-2" />
@@ -140,7 +128,7 @@ const IndexPage = ({ data }: IIndexPageProps) => {
               </div>
             </div>
             <div className="hidden sm:block sm:col-span-3 md:col-span-2 lg:col-span-3">
-              <span className="block font-bold font-montserrat text-white text-lg">scoreboard</span>
+              <a href="https://github.com/coderdiaz/scoreboard" className="block font-bold font-montserrat text-white hover:text-gray-300 text-lg underline">scoreboard</a>
               <p className="text-gray-500 text-base leading-relaxed pt-2">A board for publicy display the score in a game.</p>
               <div className="flex items-center text-gray-400 text-base pt-4">
                 <span className="w-3 h-3 rounded-full bg-green-600 mr-2" />
@@ -148,7 +136,7 @@ const IndexPage = ({ data }: IIndexPageProps) => {
               </div>
             </div>
             <div className="hidden sm:block sm:col-span-3 md:col-span-2 lg:col-span-3">
-              <span className="block font-bold font-montserrat text-white text-lg">vue-datasource</span>
+              <a href="https://github.com/coderdiaz/vue-datasource" className="block font-bold font-montserrat text-white hover:text-gray-300 text-lg underline">vue-datasource</a>
               <p className="text-gray-500 text-base leading-relaxed pt-2">A Vue component to create dynamic tables.</p>
               <div className="flex items-center text-gray-400 text-base pt-4">
                 <span className="w-3 h-3 rounded-full bg-green-600 mr-2" />
@@ -156,7 +144,7 @@ const IndexPage = ({ data }: IIndexPageProps) => {
               </div>
             </div>
             <div className="hidden sm:block sm:col-span-3 md:col-span-2 lg:col-span-3">
-              <span className="block font-bold font-montserrat text-white text-lg">vue-template-plugin</span>
+              <a href="https://github.com/coderdiaz/vue-template-plugin" className="block font-bold font-montserrat text-white hover:text-gray-300 text-lg underline">vue-template-plugin</a>
               <p className="text-gray-500 text-base leading-relaxed pt-2">A template for create a Vue Plugin with Rollup.</p>
               <div className="flex items-center text-gray-400 text-base pt-4">
                 <span className="w-3 h-3 rounded-full bg-warning-600 mr-2" />
@@ -172,22 +160,3 @@ const IndexPage = ({ data }: IIndexPageProps) => {
 };
 
 export default IndexPage;
-
-export const query = graphql`
-  query {
-    allDribbbleShot(limit: 5, sort: { fields: [published], order: DESC }) {
-      nodes {
-        id
-        title
-        cover
-        localCover {
-          childImageSharp {
-            fluid(maxWidth: 600, quality: 80) {
-              ...GatsbyImageSharpFluid_withWebp
-            }
-          }
-        }
-      }
-    }
-  }
-`;
