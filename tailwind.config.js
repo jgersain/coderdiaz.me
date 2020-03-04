@@ -140,6 +140,9 @@ module.exports = {
         125: '31.25rem',
         150: '37.5rem',
       },
+      boxShadow: {
+        link: '0 2px 0 rgba(177, 238, 209, .4)',
+      },
     },
   },
   variants: {},
