@@ -56,11 +56,11 @@ const IndexPage = () => {
           </h4>
           <svg className="hidden lg:block absolute right-full transform translate-x-1/2 translate-y-100" width="360" height="460" fill="none" viewBox="0 0 360 460">
             <defs>
-              <pattern id="svg-pattern-squares-1" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+              <pattern id="svg-pattern-squares-2" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
                 <rect x="0" y="0" width="4" height="4" className="text-dark-500" fill="currentColor"></rect>
               </pattern>
             </defs>
-            <rect width="360" height="460" fill="url(#svg-pattern-squares-1)"></rect>
+            <rect width="360" height="460" fill="url(#svg-pattern-squares-2)"></rect>
           </svg>
           <Dribbble />
         </div>
