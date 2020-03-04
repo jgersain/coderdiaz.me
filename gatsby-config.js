@@ -4,6 +4,7 @@
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
 
+const path = require('path');
 const {
   NODE_ENV,
   URL: NETLIFY_SITE_URL = 'https://www.coderdiaz.dev',
@@ -31,8 +32,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-purgecss`,
       options: {
+        develop: false,
         tailwind: true,
-        purgeOnly: [`src/css/style.css`],
+        content: [
+          path.join(process.cwd(), `src/**/!(*.d).{ts,js,jsx,tsx}`),
+        ],
       },
     },
     {
