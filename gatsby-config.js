@@ -15,6 +15,12 @@ const isNetlifyProduction = NETLIFY_ENV === 'production';
 const siteUrl = isNetlifyProduction ? NETLIFY_SITE_URL : NETLIFY_DEPLOY_URL;
 
 module.exports = {
+  siteMetadata: {
+    title: "Javier Diaz ― I'm a Software Engineer and teacher based on Mexico City",
+    description: "I'm a Software Engineer and teacher based on Mexico City, Mexico. I build outstanding, high-quality websites and web applications.",
+    author: "Javier Diaz Chamorro",
+    siteUrl: "https://coderdiaz.dev",
+  },
   plugins: [
     `gatsby-plugin-typescript`,
     `gatsby-plugin-react-helmet`,
