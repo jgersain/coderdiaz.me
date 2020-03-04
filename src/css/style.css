@@ -2,7 +2,7 @@
 @tailwind components;
 
 ::selection {
-  @apply bg-green-800 text-dark-700;
+  @apply bg-green-500 text-white;
 }
 
 @screen lg {
