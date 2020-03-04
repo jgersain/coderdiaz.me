@@ -23,7 +23,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-typescript`,
-    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-react-helmet-async`,
     `gatsby-plugin-postcss`,
     {
       resolve: `gatsby-plugin-web-font-loader`,
