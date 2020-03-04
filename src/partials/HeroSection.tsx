@@ -1,4 +1,5 @@
 import * as React from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import Logotype from "../components/Logotype";
 
 const HeroSection = () => {
@@ -32,7 +33,9 @@ const HeroSection = () => {
         </div>
       </div>
       <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-        <img className="h-56 w-full object-cover sm:h-72 md:h-80 lg:w-full lg:h-full" src="https://images.unsplash.com/photo-1563288181-3584b59503f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format" />
+        <LazyLoadImage
+          className="h-56 w-full object-cover sm:h-72 md:h-80 lg:w-full lg:h-full"
+          src="https://images.unsplash.com/photo-1563288181-3584b59503f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format" />
       </div>
     </section>
   );
