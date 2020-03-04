@@ -4,4 +4,4 @@
   
   [build.environment]
     NODE_VERSION = "12.16.1"
-    BASE_URL = "https://coderdiaz.dev"
+    BASE_URL = "https://coderdiaz.me"
