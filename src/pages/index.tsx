@@ -39,14 +39,14 @@ const IndexPage = () => {
                   </dd>
                   <dt className="text-white font-bold text-base mt-6">My favorite editor;</dt>
                   <dd className="text-base text-gray-500 mt-2">
-                    <a className="underline" href="https://code.visualstudio.com/">Visual Studio Code</a>
+                    <a href="https://code.visualstudio.com/">Visual Studio Code</a>
                   </dd>
                 </dl>
               </div>
               <div className="col-span-12 md:col-span-8 sm:text-lg">
-                <p className="text-gray-500 leading-loose">Currently working as a Tech Lead of Developers Squad at <a className="text-white underline" href="https://bedu.org">BEDU Education</a>. I mostly do front-end but I also do back-end development.</p>
+                <p className="text-gray-500 leading-loose">Currently working as a Tech Lead of Developers Squad at <a className="text-white shadow-link" href="https://bedu.org">BEDU Education</a>. I mostly do front-end but I also do back-end development.</p>
                 <p className="text-gray-500 leading-loose mt-4">I have experience working as a freelance and companies (Yeah! Startups too), but I'm ready for visit other cities and work for any development studio.</p>
-                <p className="text-gray-500 leading-loose mt-4">Now, I'm learning <span className="text-white">Flutter</span> to create an application to manage my finances and subscriptions. I saty active writting <a className="text-white underline" href="https://twitter.com/coderdiaz">tweets</a>, taking <a className="text-white underline" href="https://vsco.co/coderdiaz">photos</a> and pushing my <a className="text-white underline" href="https://github.com/coderdiaz">codes</a> for you.</p>
+                <p className="text-gray-500 leading-loose mt-4">Now, I'm learning <span className="text-white">Flutter</span> to create an application to manage my finances and subscriptions. I saty active writting <a className="text-white shadow-link" href="https://twitter.com/coderdiaz">tweets</a>, taking <a className="text-white shadow-link" href="https://vsco.co/coderdiaz">photos</a> and pushing my <a className="text-white shadow-link" href="https://github.com/coderdiaz">codes</a> for you.</p>
                 <p className="text-gray-500 leading-loose mt-4">I also share what I learn at meetups and conferences and sometimes I teach about web development.</p>
               </div>
             </div>
@@ -56,7 +56,7 @@ const IndexPage = () => {
           <div className="container px-4 sm:px-8 md:px-8 lg:max-w-screen-lg mx-auto relative">
             <h3 className="text-2xl text-white">Experiments</h3>
             <h4 className="text-lg text-gray-400">
-              My latest experiments uploaded to <a href="https://dribbble.com/coderdiaz" className="text-pink-400 font-medium underline">Dribbble</a>
+              My latest experiments uploaded to <a href="https://dribbble.com/coderdiaz" className="text-pink-400 font-medium shadow-link">Dribbble</a>
             </h4>
             <svg className="hidden lg:block absolute right-full transform translate-x-1/2 translate-y-100" width="360" height="460" fill="none" viewBox="0 0 360 460">
               <defs>
@@ -84,7 +84,7 @@ const IndexPage = () => {
             </svg>
             <div className="grid gap-10 relative pt-20 pb-0 md:py-20 sm:grid-cols-6 lg:grid-cols-12 lg:row-gap-12">
               <div className="sm:col-span-3 md:col-span-2 lg:col-span-3">
-                <a href="https://github.com/coderdiaz/vue-tiny-pagination" className="block font-bold font-montserrat text-white hover:text-gray-300 text-lg underline">vue-tiny-pagination</a>
+                <a href="https://github.com/coderdiaz/vue-tiny-pagination" className="font-bold font-montserrat text-white hover:text-gray-300 text-lg shadow-link">vue-tiny-pagination</a>
                 <p className="text-gray-500 text-base leading-relaxed pt-2">A Vue component to create a tiny pagination with flexbox.</p>
                 <div className="flex items-center text-gray-400 text-base pt-4">
                   <span className="w-3 h-3 rounded-full bg-green-500 mr-2" />
@@ -92,7 +92,7 @@ const IndexPage = () => {
                 </div>
               </div>
               <div className="sm:col-span-3 md:col-span-2 lg:col-span-3">
-                <a href="https://github.com/coderdiaz/yell-vscode-theme" className="block font-bold font-montserrat text-white hover:text-gray-300 text-lg underline">yell-vscode-theme</a>
+                <a href="https://github.com/coderdiaz/yell-vscode-theme" className="font-bold font-montserrat text-white hover:text-gray-300 text-lg shadow-link">yell-vscode-theme</a>
                 <p className="text-gray-500 text-base leading-relaxed pt-2">A VS Code theme for dark lovers with accessible colors.</p>
                 <div className="flex items-center text-gray-400 text-base pt-4">
                   <span className="w-3 h-3 rounded-full bg-gray-600 mr-2" />
@@ -100,7 +100,7 @@ const IndexPage = () => {
                 </div>
               </div>
               <div className="sm:col-span-3 md:col-span-2 lg:col-span-3">
-                <a href="https://github.com/coderdiaz/react-card-brand" className="block font-bold font-montserrat text-white hover:text-gray-300 text-lg underline">react-card-brand</a>
+                <a href="https://github.com/coderdiaz/react-card-brand" className="font-bold font-montserrat text-white hover:text-gray-300 text-lg shadow-link">react-card-brand</a>
                 <p className="text-gray-500 text-base leading-relaxed pt-2">A zero-dependency React Hook to show the brand from a card type.</p>
                 <div className="flex items-center text-gray-400 text-base pt-4">
                   <span className="w-3 h-3 rounded-full bg-alternative-600 mr-2" />
@@ -108,7 +108,7 @@ const IndexPage = () => {
                 </div>
               </div>
               <div className="hidden sm:block sm:col-span-3 md:col-span-2 lg:col-span-3">
-                <a href="https://github.com/coderdiaz/vue-status-indicator" className="block font-bold font-montserrat text-white hover:text-gray-300 text-lg underline">vue-status-indicator</a>
+                <a href="https://github.com/coderdiaz/vue-status-indicator" className="font-bold font-montserrat text-white hover:text-gray-300 text-lg shadow-link">vue-status-indicator</a>
                 <p className="text-gray-500 text-base leading-relaxed pt-2">A Vue component to show status indicator as colored dots.</p>
                 <div className="flex items-center text-gray-400 text-base pt-4">
                   <span className="w-3 h-3 rounded-full bg-green-600 mr-2" />
@@ -116,7 +116,7 @@ const IndexPage = () => {
                 </div>
               </div>
               <div className="hidden sm:block sm:col-span-3 md:col-span-2 lg:col-span-3">
-                <a href="https://github.com/coderdiaz/scoreboard" className="block font-bold font-montserrat text-white hover:text-gray-300 text-lg underline">scoreboard</a>
+                <a href="https://github.com/coderdiaz/scoreboard" className="font-bold font-montserrat text-white hover:text-gray-300 text-lg shadow-link">scoreboard</a>
                 <p className="text-gray-500 text-base leading-relaxed pt-2">A board for publicy display the score in a game.</p>
                 <div className="flex items-center text-gray-400 text-base pt-4">
                   <span className="w-3 h-3 rounded-full bg-green-600 mr-2" />
@@ -124,7 +124,7 @@ const IndexPage = () => {
                 </div>
               </div>
               <div className="hidden sm:block sm:col-span-3 md:col-span-2 lg:col-span-3">
-                <a href="https://github.com/coderdiaz/vue-datasource" className="block font-bold font-montserrat text-white hover:text-gray-300 text-lg underline">vue-datasource</a>
+                <a href="https://github.com/coderdiaz/vue-datasource" className="font-bold font-montserrat text-white hover:text-gray-300 text-lg shadow-link">vue-datasource</a>
                 <p className="text-gray-500 text-base leading-relaxed pt-2">A Vue component to create dynamic tables.</p>
                 <div className="flex items-center text-gray-400 text-base pt-4">
                   <span className="w-3 h-3 rounded-full bg-green-600 mr-2" />
@@ -132,7 +132,7 @@ const IndexPage = () => {
                 </div>
               </div>
               <div className="hidden sm:block sm:col-span-3 md:col-span-2 lg:col-span-3">
-                <a href="https://github.com/coderdiaz/vue-template-plugin" className="block font-bold font-montserrat text-white hover:text-gray-300 text-lg underline">vue-template-plugin</a>
+                <a href="https://github.com/coderdiaz/vue-template-plugin" className="font-bold font-montserrat text-white hover:text-gray-300 text-lg shadow-link">vue-template-plugin</a>
                 <p className="text-gray-500 text-base leading-relaxed pt-2">A template for create a Vue Plugin with Rollup.</p>
                 <div className="flex items-center text-gray-400 text-base pt-4">
                   <span className="w-3 h-3 rounded-full bg-warning-600 mr-2" />

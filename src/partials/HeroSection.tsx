@@ -14,7 +14,7 @@ const HeroSection = () => {
             <h2 className="block text-green-500 tracking-wide font-montserrat font-bold text-xl sm:text-3xl mb-6">I build stuff for the web</h2>
             <p className="block text-gray-400">I'm a Software Engineer and teacher based on Mexico City, Mexico. I build outstanding, high-quality websites and web applications.</p>
             <p className="hidden sm:block text-gray-400 mt-4">Actually, I'm creating platforms and applications using the JAMstack architecture.</p>
-            <p className="block text-gray-400 mt-4">Scroll down to find out more about my work or <a className="text-white underline" href="mailto: hello@coderdiaz.me">hire me</a>.</p>
+            <p className="block text-gray-400 mt-4">Scroll down to find out more about my work or <a className="text-white shadow-link" href="mailto: hello@coderdiaz.me">hire me</a>.</p>
             <div className="mt-6 flex">
               <a className="text-gray-500 hover:text-white p-3 mr-2" aria-label="GitHub" href="https://github.com/coderdiaz">
                 <span className="text-2xl icon-github" />
@@ -27,12 +27,9 @@ const HeroSection = () => {
               </a>
             </div>
           </div>
-          <svg className="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-darken transform translate-x-1/2" fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none">
-            <polygon points="0,0 100,0 50,100 0,100"></polygon>
-          </svg>
         </div>
       </div>
-      <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+      <div className="hero__image lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
         <picture>
           <source srcSet="https://images.unsplash.com/photo-1563288181-3584b59503f9?auto=format&fit=crop&w=320&q=80" media="(max-width: 320px)" />
           <source srcSet="https://images.unsplash.com/photo-1563288181-3584b59503f9?auto=format&fit=crop&w=465&q=50" media="(max-width: 465px)" />
