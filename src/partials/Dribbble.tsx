@@ -2,16 +2,7 @@ import * as React from "react";
 import classnames from "classnames";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { IShot } from "../interfaces";
-
-const getDribbbleShots = () => new Promise<IShot[]>((resolve, reject) => {
-  fetch(`https://api.dribbble.com/v2/user/shots?per_page=5`, {
-    headers: {
-      Authorization: `Bearer c45be162c0dae8c4c3ea96a4ee734d910149c29b3f3c16abe8ed3595dc118e54`,
-    },
-  }).then(response => response.json())
-    .then(data => resolve(data))
-    .catch(err => reject(err));
-});
+import { getDribbbleShots } from "../utils/getDribbbleShots";
 
 const Dribbble = () => {
   const [shots, setShots] = React.useState<IShot[]>([]);
@@ -34,9 +25,7 @@ const Dribbble = () => {
     <div className="grid sm:grid-cols-6 sm:grid-rows-8 sm:grid-row gap-5 mt-6">
       {shots.map(
         (node: any, index: number) => <div key={index} className={classnames("relative", cardClasses[index])}>
-          <LazyLoadImage
-            src={node.images.hidpi} 
-            className="absolute w-full h-full object-cover" />
+          <LazyLoadImage src={node.images.hidpi} className="absolute w-full h-full object-cover" />
         </div>
       )}
     </div>
