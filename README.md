@@ -1,9 +1,9 @@
-## coderdiaz.dev – 4.0.0
-[![Netlify Status](https://api.netlify.com/api/v1/badges/70350f80-4ca4-468c-97cc-db71dc281f22/deploy-status)](https://app.netlify.com/sites/coderdiaz/deploys)
+## coderdiaz.me – 4.0.0
+[![Netlify Status](https://api.netlify.com/api/v1/badges/fd381bb2-9ac5-4d54-8985-3060257c314b/deploy-status)](https://app.netlify.com/sites/coderdiaz/deploys)
 
-The quarter iteration of [coderdiaz.dev](https://coderdiaz.dev), built with [Gatsby](https://www.gatsbyjs.org/) and [TailwindCSS](https://tailwindcss.com/) and hosted on [Netlify](https://www.netlify.com/).
+The quarter iteration of [coderdiaz.me](https://coderdiaz.me), built with [Gatsby](https://www.gatsbyjs.org/) and [TailwindCSS](https://tailwindcss.com/) and hosted on [Netlify](https://www.netlify.com/).
 
-Previous version: [3.0.0](https://github.com/coderdiaz/coderdiaz.github.io).
+Previous version: [3.0.0](https://github.com/coderdiaz/v3).
 
 ![New version](docs/screenshot.png)
 
@@ -13,4 +13,4 @@ Previous version: [3.0.0](https://github.com/coderdiaz/coderdiaz.github.io).
 $ npm i
 ```
 
-**coderdiaz.dev** @ 2020
+**coderdiaz.me** @ 2020
