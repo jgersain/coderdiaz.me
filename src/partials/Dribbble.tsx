@@ -24,8 +24,8 @@ const Dribbble = () => {
   return (
     <div className="grid sm:grid-cols-6 sm:grid-rows-8 sm:grid-row gap-5 mt-6">
       {shots.map(
-        (node: any, index: number) => <div key={index} className={classnames("relative", cardClasses[index])}>
-          <LazyLoadImage src={node.images.hidpi} className="absolute w-full h-full object-cover" />
+        (node, index: number) => <div key={index} className={classnames("relative", cardClasses[index])}>
+          <LazyLoadImage alt={node.title} src={node.images.hidpi} className="absolute w-full h-full object-cover" />
         </div>
       )}
     </div>

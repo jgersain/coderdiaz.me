@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function HTML(props) {
   return (
-    <html className="font-rubik bg-dark-600 leading-normal antialiased" {...props.htmlAttributes}>
+    <html lang="en" className="font-rubik bg-dark-600 leading-normal antialiased" {...props.htmlAttributes}>
       <head>
         <meta charSet="utf-8" />
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />

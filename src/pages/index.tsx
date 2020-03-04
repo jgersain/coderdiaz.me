@@ -2,10 +2,14 @@ import * as React from "react";
 import HeroSection from "../partials/HeroSection";
 import Dribbble from "../partials/Dribbble";
 import Footer from "../partials/Footer";
+import Helmet from "react-helmet";
 
 const IndexPage = () => {
   return (
     <>
+      <Helmet>
+        <meta name="description" content="I'm a Software Engineer and teacher based on Mexico City, Mexico. I build outstanding, high-quality websites and web applications." />
+      </Helmet>
       <HeroSection />
       <section className="pt-10 pb-5 sm:pt-20 sm:pb-10 overflow-hidden">
         <div className="container px-4 sm:px-8 md:px-8 lg:max-w-screen-lg mx-auto relative">
