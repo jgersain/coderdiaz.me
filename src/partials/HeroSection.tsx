@@ -4,7 +4,9 @@ import Logotype from "../components/Logotype";
 
 const HeroSection = () => {
   return (
-    <section className="bg-darken relative overflow-hidden">
+    <section className="bg-darken relative overflow-hidden" style={{
+      backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='199' viewBox='0 0 100 199'%3E%3Cg fill='%23242629' fill-opacity='0.4'%3E%3Cpath d='M0 199V0h1v1.99L100 199h-1.12L1 4.22V199H0zM100 2h-.12l-1-2H100v2z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E")`
+    }}>
       <div className="container px-4 md:px-8 lg:max-w-screen-lg mx-auto">
         <div className="relative z-10 pb-8 sm:pb-16 md:pb-20 lg:max-w-xl lg:py-32 lg:pr-24 lg:w-full xl:pb-32">
           <div className="mt-12 mx-auto max-w-screen-xl px-4 sm:mt-16 sm:px-6 md:px-4 md:mt-16 lg:mt-0 lg:px-0 xl:mt-28">
