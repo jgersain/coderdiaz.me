@@ -16,14 +16,14 @@ const HeroSection = () => {
             <p className="hidden sm:block text-gray-400 mt-4">Actually, I'm creating platforms and applications using the JAMstack architecture.</p>
             <p className="block text-gray-400 mt-4">Scroll down to find out more about my work or <a className="text-white underline" href="mailto: hello@coderdiaz.me">hire me</a>.</p>
             <div className="mt-6 flex">
-              <a className="text-gray-500 hover:text-white" href="https://github.com/coderdiaz">
-                <span className="mr-4 text-2xl icon-github" />
+              <a className="text-gray-500 hover:text-white p-3 mr-2" aria-label="GitHub" href="https://github.com/coderdiaz">
+                <span className="text-2xl icon-github" />
               </a>
-              <a className="text-gray-500 hover:text-white" href="https://twitter.com/coderdiaz">
-                <span className="mr-4 text-2xl icon-twitter" />
+              <a className="text-gray-500 hover:text-white p-3 mr-2" aria-label="Twitter" href="https://twitter.com/coderdiaz">
+                <span className="text-2xl icon-twitter" />
               </a>
-              <a className="text-gray-500 hover:text-white" href="https://dribbble.com/coderdiaz">
-                <span className="mr-4 text-2xl icon-dribbble" />
+              <a className="text-gray-500 hover:text-white p-3" aria-label="Dribbble" href="https://dribbble.com/coderdiaz">
+                <span className="text-2xl icon-dribbble" />
               </a>
             </div>
           </div>

@@ -10,13 +10,13 @@ const Footer = () => {
           Made in Mexico with love <span className="icon-heart text-red-500"></span>
         </p>
         <div className="flex sm:justify-center pt-2">
-          <a className="text-gray-700 hover:text-gray-600" href="https://github.com/coderdiaz">
-            <span className="mr-4 icon-github text-xl" />
+          <a className="text-gray-700 hover:text-gray-600 p-3 mr-2"  aria-label="GitHub" href="https://github.com/coderdiaz">
+            <span className="icon-github text-xl" />
           </a>
-          <a className="text-gray-700 hover:text-gray-600" href="https://twitter.com/coderdiaz">
-            <span className="mr-4 icon-twitter text-xl" />
+          <a className="text-gray-700 hover:text-gray-600 p-3 mr-2" aria-label="Twitter" href="https://twitter.com/coderdiaz">
+            <span className="icon-twitter text-xl" />
           </a>
-          <a className="text-gray-700 hover:text-gray-600" href="https://dribbble.com/coderdiaz">
+          <a className="text-gray-700 hover:text-gray-600 p-3" aria-label="Dribbble" href="https://dribbble.com/coderdiaz">
             <span className="icon-dribbble text-xl" />
           </a>
         </div>
