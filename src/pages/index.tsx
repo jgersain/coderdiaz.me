@@ -1,8 +1,10 @@
 import * as React from "react";
-import HeroSection from "../partials/HeroSection";
-import Dribbble from "../partials/Dribbble";
-import Footer from "../partials/Footer";
 import Helmet from "react-helmet";
+import loadable from "@loadable/component";
+import HeroSection from "../partials/HeroSection";
+import Footer from "../partials/Footer";
+
+const Dribbble = loadable(() => import("../partials/Dribbble"));
 
 const IndexPage = () => {
   return (
