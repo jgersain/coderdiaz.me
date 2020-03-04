@@ -1,8 +1,9 @@
 import * as React from "react";
 import classnames from "classnames";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import { IShot } from "../interfaces";
 
-const getDribbbleShots = () => new Promise((resolve, reject) => {
+const getDribbbleShots = () => new Promise<IShot[]>((resolve, reject) => {
   fetch(`https://api.dribbble.com/v2/user/shots?per_page=5`, {
     headers: {
       Authorization: `Bearer c45be162c0dae8c4c3ea96a4ee734d910149c29b3f3c16abe8ed3595dc118e54`,
@@ -13,7 +14,7 @@ const getDribbbleShots = () => new Promise((resolve, reject) => {
 });
 
 const Dribbble = () => {
-  const [shots, setShots] = React.useState<any>([]);
+  const [shots, setShots] = React.useState<IShot[]>([]);
 
   // On mount get the dribbble shots from API
   React.useEffect(() => {

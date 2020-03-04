@@ -1,11 +1,9 @@
-import { FluidObject } from "gatsby-image";
+interface Image {
+  hidpi: string;
+}
 
 export interface IShot {
   id: number;
   title: string;
-  localCover: {
-    childImageSharp: {
-      fluid: FluidObject;
-    };
-  };
+  images: Image;
 };
