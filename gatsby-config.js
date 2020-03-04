@@ -66,5 +66,14 @@ module.exports = {
         },
       },
     },
+    {
+      resolve: `gatsby-plugin-preconnect`,
+      options: {
+        domains: [
+          'https://api.dribbble.com',
+          'https://fonts.googleapis.com',
+        ],
+      },
+    },
   ],
 };
