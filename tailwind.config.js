@@ -119,7 +119,10 @@ module.exports = {
       xl: '1.5rem',
       '2xl': '1.75rem',
       '3xl': '2.25rem',
+      '3.5xl': '2.5rem',
       '4xl': '3rem',
+      '4.5xl': '3.25rem',
+      '5xl': '3.5rem',
     },
     extend: {
       inset: {
