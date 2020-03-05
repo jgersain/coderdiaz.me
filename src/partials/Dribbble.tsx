@@ -1,6 +1,6 @@
 import * as React from "react";
 import classnames from "classnames";
-import Lazyload from "react-lazyload";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import { IShot } from "../interfaces";
 import { getDribbbleShots } from "../utils/getDribbbleShots";
 
@@ -25,12 +25,10 @@ const Dribbble = () => {
     <div className="grid sm:grid-cols-6 sm:grid-rows-8 sm:grid-row gap-5 mt-6">
       {shots.map(
         (node, index: number) => <div key={index} className={classnames("relative", cardClasses[index])}>
-          <Lazyload>
-            <img
-              alt={node.title}
-              src={node.images.hidpi}
-              className="absolute w-full h-full object-cover" />
-          </Lazyload>
+          <LazyLoadImage
+            alt={node.title}
+            src={node.images.hidpi}
+            className="absolute w-full h-full object-cover" />
         </div>
       )}
     </div>

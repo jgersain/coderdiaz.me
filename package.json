@@ -29,7 +29,7 @@
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "react-helmet-async": "^1.0.4",
-    "react-lazyload": "^2.6.5"
+    "react-lazy-load-image-component": "^1.4.1"
   },
   "devDependencies": {
     "@types/react-helmet": "^5.0.15",
