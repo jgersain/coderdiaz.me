@@ -40,7 +40,7 @@ const HeroSection = () => {
             srcSet="/images/hero-300.jpg 375w, /images/hero-600.jpg 640w, /images/hero-800.jpg 768w, /images/hero.jpg 1024w" />
           <LazyLoadImage
             alt="Javier Diaz ― I'm a Software Engineer and teacher based on Mexico City"
-            className="h-56 w-full object-cover sm:h-72 md:h-80 lg:w-full lg:h-full lg:inset-x-0"
+            className="h-56 w-full object-cover sm:h-72 md:h-80 lg:w-full lg:h-full lg:inset-x-0 border border-transparent"
             src="/images/hero-300.jpg" />
         </picture>
       </div>
