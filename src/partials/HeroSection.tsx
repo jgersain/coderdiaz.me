@@ -41,7 +41,7 @@ const HeroSection = () => {
           <LazyLoadImage
             alt="Javier Diaz ― I'm a Software Engineer and teacher based on Mexico City"
             className="h-56 w-full object-cover sm:h-72 md:h-80 lg:w-full lg:h-full lg:inset-x-0 border border-transparent"
-            src="/images/hero-300.jpg" />
+            srcSet="/images/hero.jpg" />
         </picture>
       </div>
     </section>
