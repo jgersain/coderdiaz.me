@@ -35,15 +35,15 @@ const HeroSection = () => {
         <picture>
           <source
             type="image/webp" 
-            srcSet="/images/hero-300.webp 300w,
-                    /images/hero-600.webp 600w,
-                    /images/hero-800.webp 800w,
-                    /images/hero.webp 1000w" />
+            srcSet="/images/hero-300.webp 375w,
+                    /images/hero-600.webp 640w,
+                    /images/hero-800.webp 768w,
+                    /images/hero.webp 1024w" />
           <source
-            srcSet="/images/hero-300.jpg 300w,
-                    /images/hero-600.jpg 600w,
-                    /images/hero-800.jpg 800w,
-                    /images/hero.jpg 1000w" />
+            srcSet="/images/hero-300.jpg 375w,
+                    /images/hero-600.jpg 640w,
+                    /images/hero-800.jpg 768w,
+                    /images/hero.jpg 1024w" />
           <LazyLoadImage
             alt="Javier Diaz ― I'm a Software Engineer and teacher based on Mexico City"
             className="h-56 w-full object-cover sm:h-72 md:h-80 lg:w-full lg:h-full lg:inset-x-0"
