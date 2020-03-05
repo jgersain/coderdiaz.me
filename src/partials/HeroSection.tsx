@@ -33,10 +33,21 @@ const HeroSection = () => {
       </div>
       <div className="hero__image lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
         <picture>
+          <source
+            type="image/webp" 
+            srcSet="/images/hero-300.webp 300w,
+                    /images/hero-600.webp 600w,
+                    /images/hero-800.webp 800w,
+                    /images/hero.webp 1000w" />
+          <source
+            srcSet="/images/hero-300.jpg 300w,
+                    /images/hero-600.jpg 600w,
+                    /images/hero-800.jpg 800w,
+                    /images/hero.jpg 1000w" />
           <LazyLoadImage
             alt="Javier Diaz ― I'm a Software Engineer and teacher based on Mexico City"
             className="h-56 w-full object-cover sm:h-72 md:h-80 lg:w-full lg:h-full lg:inset-x-0"
-            src="https://ucarecdn.com/147cc49c-7c85-403d-b045-2353ec73fd4b/-/scale_crop/1200x1000/bottom/-/quality/best/" />
+            src="/images/hero-300.jpg" />
         </picture>
       </div>
     </section>
