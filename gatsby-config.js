@@ -75,5 +75,22 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: `gatsby-plugin-netlify`,
+      options: {
+        headers: {
+          '/*': [
+            'cache-control: public',
+            'cache-control: no-cache',
+          ],
+          '/page-data/*': [
+            'cache-control: public',
+            'cache-control: max-age=0',
+            'cache-control: must-revalidate',
+          ],
+        },
+        mergeCachingHeaders: true,
+      },
+    },
   ],
 };
