@@ -15,7 +15,7 @@ const IndexPage = () => {
       </Helmet>
       <HeroSection />
       <section className="pt-10 pb-5 sm:pt-20 sm:pb-10 overflow-hidden">
-        <div className="container px-4 sm:px-8 md:px-8 lg:max-w-screen-lg mx-auto relative">
+        <div className="container px-8 sm:px-8 md:px-8 lg:max-w-screen-lg mx-auto relative">
           <svg className="hidden lg:block absolute left-full transform -translate-x-1/2 -translate-y-20" width="360" height="460" fill="none" viewBox="0 0 360 460">
             <defs>
               <pattern id="svg-pattern-squares-1" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
@@ -70,9 +70,9 @@ const IndexPage = () => {
       </section>
       <CTASection />
       <section className="py-20 overflow-hidden">
-        <div className="container px-4 sm:px-8 md:px-8 lg:px-0 lg:max-w-screen-lg mx-auto relative">
+        <div className="container px-8 sm:px-8 md:px-8 lg:px-0 lg:max-w-screen-lg mx-auto relative">
           <h2 className="text-white text-2xl">Open Source</h2>
-          <p className="text-gray-400 font-lg w-100 tracking-wide leading-relaxed mt-1">I volunteer in part time creating libraries and sharing resources to help people create web apps and a better world.</p>
+          <p className="text-gray-400 font-lg sm:w-100 tracking-wide leading-relaxed mt-1">I volunteer in part time creating libraries and sharing resources to help people create web apps and a better world.</p>
           <svg className="hidden lg:block absolute left-full transform -translate-x-1/2 -translate-y-50" width="360" height="750" fill="none" viewBox="0 0 360 750">
             <defs>
               <pattern id="svg-pattern-squares-3" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
@@ -82,7 +82,7 @@ const IndexPage = () => {
             <rect width="360" height="750" fill="url(#svg-pattern-squares-3)"></rect>
           </svg>
           <div className="grid gap-10 relative pt-20 pb-0 md:py-20 sm:grid-cols-6 lg:grid-cols-12 lg:row-gap-12">
-            <div className="sm:col-span-3 md:col-span-2 lg:col-span-3">
+            <div className="mr-32 sm:mr-0 sm:col-span-3 md:col-span-2 lg:col-span-3">
               <a href="https://github.com/coderdiaz/vue-tiny-pagination" className="font-bold font-montserrat text-white hover:text-gray-300 text-lg shadow-link">vue-tiny-pagination</a>
               <p className="text-gray-500 text-base leading-relaxed pt-2">A Vue component to create a tiny pagination with flexbox.</p>
               <div className="flex items-center text-gray-400 text-base pt-4">
@@ -90,7 +90,7 @@ const IndexPage = () => {
                 Vue
               </div>
             </div>
-            <div className="sm:col-span-3 md:col-span-2 lg:col-span-3">
+            <div className="mr-32 sm:mr-0 sm:col-span-3 md:col-span-2 lg:col-span-3">
               <a href="https://github.com/coderdiaz/yell-vscode-theme" className="font-bold font-montserrat text-white hover:text-gray-300 text-lg shadow-link">yell-vscode-theme</a>
               <p className="text-gray-500 text-base leading-relaxed pt-2">A VS Code theme for dark lovers with accessible colors.</p>
               <div className="flex items-center text-gray-400 text-base pt-4">
@@ -98,7 +98,7 @@ const IndexPage = () => {
                 VS Code Extensions
               </div>
             </div>
-            <div className="sm:col-span-3 md:col-span-2 lg:col-span-3">
+            <div className="mr-32 sm:mr-0 sm:col-span-3 md:col-span-2 lg:col-span-3">
               <a href="https://github.com/coderdiaz/react-card-brand" className="font-bold font-montserrat text-white hover:text-gray-300 text-lg shadow-link">react-card-brand</a>
               <p className="text-gray-500 text-base leading-relaxed pt-2">A zero-dependency React Hook to show the brand from a card type.</p>
               <div className="flex items-center text-gray-400 text-base pt-4">
@@ -106,7 +106,7 @@ const IndexPage = () => {
                 TypeScript
               </div>
             </div>
-            <div className="hidden sm:block sm:col-span-3 md:col-span-2 lg:col-span-3">
+            <div className="mr-32 sm:mr-0 hidden sm:block sm:col-span-3 md:col-span-2 lg:col-span-3">
               <a href="https://github.com/coderdiaz/vue-status-indicator" className="font-bold font-montserrat text-white hover:text-gray-300 text-lg shadow-link">vue-status-indicator</a>
               <p className="text-gray-500 text-base leading-relaxed pt-2">A Vue component to show status indicator as colored dots.</p>
               <div className="flex items-center text-gray-400 text-base pt-4">
@@ -114,7 +114,7 @@ const IndexPage = () => {
                 Vue
               </div>
             </div>
-            <div className="hidden sm:block sm:col-span-3 md:col-span-2 lg:col-span-3">
+            <div className="mr-32 sm:mr-0 hidden sm:block sm:col-span-3 md:col-span-2 lg:col-span-3">
               <a href="https://github.com/coderdiaz/scoreboard" className="font-bold font-montserrat text-white hover:text-gray-300 text-lg shadow-link">scoreboard</a>
               <p className="text-gray-500 text-base leading-relaxed pt-2">A board for publicy display the score in a game.</p>
               <div className="flex items-center text-gray-400 text-base pt-4">
@@ -122,7 +122,7 @@ const IndexPage = () => {
                 Vue
               </div>
             </div>
-            <div className="hidden sm:block sm:col-span-3 md:col-span-2 lg:col-span-3">
+            <div className="mr-32 sm:mr-0 hidden sm:block sm:col-span-3 md:col-span-2 lg:col-span-3">
               <a href="https://github.com/coderdiaz/vue-datasource" className="font-bold font-montserrat text-white hover:text-gray-300 text-lg shadow-link">vue-datasource</a>
               <p className="text-gray-500 text-base leading-relaxed pt-2">A Vue component to create dynamic tables.</p>
               <div className="flex items-center text-gray-400 text-base pt-4">
@@ -130,7 +130,7 @@ const IndexPage = () => {
                 Vue
               </div>
             </div>
-            <div className="hidden sm:block sm:col-span-3 md:col-span-2 lg:col-span-3">
+            <div className="mr-32 sm:mr-0 hidden sm:block sm:col-span-3 md:col-span-2 lg:col-span-3">
               <a href="https://github.com/coderdiaz/vue-template-plugin" className="font-bold font-montserrat text-white hover:text-gray-300 text-lg shadow-link">vue-template-plugin</a>
               <p className="text-gray-500 text-base leading-relaxed pt-2">A template for create a Vue Plugin with Rollup.</p>
               <div className="flex items-center text-gray-400 text-base pt-4">

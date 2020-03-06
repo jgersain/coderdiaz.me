@@ -9,17 +9,29 @@ const AboutPage = () => {
       <title>About me ― Javier Diaz: Software Engineer and teacher</title>
       <meta name="description" content="I’m a Software Engineer and sometimes a “designer”. I currently live in Mexico City, Mexico with my wife Becky and working as a Tech Lead of Developer Squad at BEDU Education." />
     </Helmet>
-    <section className="bg-darken h-56 md:h-72">
+    <section className="bg-darken h-72 md:h-72">
       <div className="container px-4 sm:px-8 md:px-8 lg:max-w-screen-lg mx-auto relative">
         <h1 className="text-3xl text-gray-300 pt-12">About me</h1>
-        <div className="relative pb-56 md:pb-72 lg:pb-80">
+        <div className="relative pb-72 md:pb-72 lg:pb-80">
           <picture>
             <source
-              srcSet="/images/about-me-380.jpg 375w, /images/about-me.jpg 1024w" />
+              media="(max-width: 767px)"
+              sizes="(max-width: 357px) 100vw, 357px"
+              srcSet="
+              /images/about-me_a404rf_ar_1_1,c_fill,g_auto__c_scale,w_200.jpg 200w,
+              /images/about-me_a404rf_ar_1_1,c_fill,g_auto__c_scale,w_279.jpg 279w,
+              /images/about-me_a404rf_ar_1_1,c_fill,g_auto__c_scale,w_349.jpg 349w,
+              /images/about-me_a404rf_ar_1_1,c_fill,g_auto__c_scale,w_357.jpg 357w" />
             <LazyLoadImage
+              sizes="(max-width: 1371px) 70vw, 960px" 
               alt="Javier Diaz"
               className="mt-4 rounded-lg absolute object-cover h-full w-full"
-              src="/images/about-me.jpg" />
+              srcset="
+                /images/about-me_a404rf_c_scale,w_840.jpg 840w,
+                /images/about-me_a404rf_c_scale,w_909.jpg 909w,
+                /images/about-me_a404rf_c_scale,w_949.jpg 949w,
+                /images/about-me_a404rf_c_scale,w_960.jpg 960w"
+              src="/images/about-me_a404rf_c_scale,w_960.jpg" />
           </picture>
         </div>
       </div>
