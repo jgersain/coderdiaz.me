@@ -22,6 +22,7 @@ module.exports = {
     siteUrl,
   },
   plugins: [
+    `gatsby-plugin-netlify-cache`,
     `gatsby-plugin-typescript`,
     `gatsby-plugin-react-helmet-async`,
     `gatsby-plugin-postcss`,
