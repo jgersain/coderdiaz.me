@@ -1,8 +1,9 @@
 import * as React from "react";
 import { HelmetProvider } from "react-helmet-async";
 import loadable from "@loadable/component";
+import Header from "../partials/Header";
 
-const Header = loadable(() => import("../partials/Header"));
+// Laoding component with Lazy-Load @loadable/component
 const Footer = loadable(() => import("../partials/Footer"));
 
 const withBaseLayout = (Page: any, hasHeader: boolean = false) => {

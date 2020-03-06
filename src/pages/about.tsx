@@ -17,6 +17,7 @@ const AboutPage = () => {
             <source
               srcSet="/images/about-me-380.jpg 375w, /images/about-me.jpg 1024w" />
             <LazyLoadImage
+              alt="Javier Diaz"
               className="mt-4 rounded-lg absolute object-cover h-full w-full"
               src="/images/about-me.jpg" />
           </picture>
