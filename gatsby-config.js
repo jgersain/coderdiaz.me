@@ -7,7 +7,7 @@
 const path = require('path');
 const {
   NODE_ENV,
-  URL: NETLIFY_SITE_URL = 'https://www.coderdiaz.dev',
+  URL: NETLIFY_SITE_URL = 'https://www.coderdiaz.me',
   DEPLOY_PRIME_URL: NETLIFY_DEPLOY_URL = NETLIFY_SITE_URL,
   CONTEXT: NETLIFY_ENV = NODE_ENV
 } = process.env;
@@ -19,7 +19,7 @@ module.exports = {
     title: "Javier Diaz ― I'm a Software Engineer and teacher based on Mexico City",
     description: "I'm a Software Engineer and teacher based on Mexico City, Mexico. I build outstanding, high-quality websites and web applications.",
     author: "Javier Diaz Chamorro",
-    siteUrl: "https://coderdiaz.dev",
+    siteUrl,
   },
   plugins: [
     `gatsby-plugin-typescript`,
