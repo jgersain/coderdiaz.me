@@ -31,7 +31,7 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-      <div className="hero__image lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+      <div className="hidden sm:block hero__image lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
         <picture>
           <source
             type="image/webp"

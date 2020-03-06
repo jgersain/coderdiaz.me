@@ -18,7 +18,7 @@ const CTASection = () => {
           </div>
           <div className="ml-3 inline-flex rounded-md shadow">
             <Link to="/about" className="inline-flex items-center justify-center px-8 py-4 border border-transparent leading-6 font-medium rounded-md text-white bg-dark-500 hover:bg-dark-400 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
-              Learn more
+              More about me
             </Link>
           </div>
         </div>
