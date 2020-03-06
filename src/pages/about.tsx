@@ -14,9 +14,11 @@ const AboutPage = () => {
         <h1 className="text-3xl text-gray-300 pt-12">About me</h1>
         <div className="relative pb-56 md:pb-72 lg:pb-80">
           <picture>
+            <source
+              srcSet="/images/about-me-380.jpg 375w, /images/about-me.jpg 1024w" />
             <LazyLoadImage
               className="mt-4 rounded-lg absolute object-cover h-full w-full"
-              src="https://images.unsplash.com/photo-1548979834-e02a8293c002?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" />
+              src="/images/about-me.jpg" />
           </picture>
         </div>
       </div>
