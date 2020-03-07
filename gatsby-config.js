@@ -27,6 +27,12 @@ module.exports = {
     `gatsby-plugin-react-helmet-async`,
     `gatsby-plugin-postcss`,
     {
+      resolve: `gatsby-source-dribbble`,
+      options: {
+        access_token: 'c45be162c0dae8c4c3ea96a4ee734d910149c29b3f3c16abe8ed3595dc118e54',
+      },
+    },
+    {
       resolve: `gatsby-plugin-web-font-loader`,
       options: {
         custom: {
