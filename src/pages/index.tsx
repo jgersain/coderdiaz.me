@@ -1,13 +1,24 @@
 import * as React from "react";
-import loadable from "@loadable/component";
+import { graphql } from "gatsby";
 import { Helmet } from "react-helmet-async";
+import loadable from "@loadable/component";
 import withBaseLayout from "../layouts/BaseLayout";
 import HeroSection from "../partials/HeroSection";
+import { IShot } from "../interfaces";
 
 const Dribbble = loadable(() => import("../partials/Dribbble"));
 const CTASection = loadable(() => import("../partials/CTASection"));
 
-const IndexPage = () => {
+interface IIndexPageProps {
+  data: {
+    allDribbbleShot: {
+      nodes: IShot;
+    }
+  }
+}
+
+const IndexPage = ({ data }: IIndexPageProps) => {
+  const { nodes } = data.allDribbbleShot;
   return (
     <>
       <Helmet>
@@ -65,7 +76,7 @@ const IndexPage = () => {
             </defs>
             <rect width="360" height="460" fill="url(#svg-pattern-squares-2)"></rect>
           </svg>
-          <Dribbble />
+          <Dribbble shots={nodes} />
         </div>
       </section>
       <CTASection />
@@ -146,3 +157,14 @@ const IndexPage = () => {
 };
 
 export default withBaseLayout(IndexPage);
+
+export const pageQuery = graphql`
+  query indexPage {
+    allDribbbleShot {
+      nodes {
+        id
+        cover
+      }
+    }
+  }
+`;

@@ -2,15 +2,12 @@ import * as React from "react";
 import classnames from "classnames";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { IShot } from "../interfaces";
-import { getDribbbleShots } from "../utils/getDribbbleShots";
 
-const Dribbble = () => {
-  const [shots, setShots] = React.useState<IShot[]>([]);
+interface IDribbleProps {
+  shots: IShot[];
+}
 
-  // On mount get the dribbble shots from API
-  React.useEffect(() => {
-    getDribbbleShots().then(data => setShots(data));
-  }, []);
+const Dribbble = ({ shots }: IDribbleProps) => {
 
   // Adding classes by card item for custom grid
   const cardClasses = [
@@ -27,7 +24,7 @@ const Dribbble = () => {
         (node, index: number) => <div key={index} className={classnames("relative", cardClasses[index])}>
           <LazyLoadImage
             alt={node.title}
-            src={node.images.hidpi}
+            src={node.cover}
             className="absolute w-full h-full object-cover" />
         </div>
       )}
