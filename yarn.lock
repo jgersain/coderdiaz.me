@@ -4618,6 +4618,13 @@ gatsby-react-router-scroll@^2.1.22:
     scroll-behavior "^0.9.10"
     warning "^3.0.0"
 
+gatsby-source-dribbble@^2.1.3:
+  version "2.1.3"
+  resolved "https://registry.yarnpkg.com/gatsby-source-dribbble/-/gatsby-source-dribbble-2.1.3.tgz#b952a2c253e5828774af3fa5126d25dca06045f1"
+  integrity sha512-YqR57qzvSa037uS8I+iw710SUbsqQZni9MKvibN8vNP6gEG+0Gf6YuNkxCLmc+oMTW9rd81ml0pJRIQpAC4n6w==
+  dependencies:
+    axios "^0.19.0"
+
 gatsby-source-filesystem@^2.1.48:
   version "2.1.48"
   resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-2.1.48.tgz#85bd83b953278a7597be38b2e8cd9c69de32fa64"
