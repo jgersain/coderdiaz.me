@@ -186,7 +186,7 @@ module.exports = {
       '4s': '4s',
       '5s': '5s',
     },
-    animationDelay: { // defaults to these values
+    animationDelay: {
       'default': '0s',
       '0s': '0s',
       '10ms': '0.10s',
@@ -199,11 +199,17 @@ module.exports = {
       '110ms': '1.10s',
       '125ms': '1.25s',
       '140ms': '1.40s',
+      '1.5s': '1.5s',
       '155ms': '1.55s',
       '2s': '2s',
       '3s': '3s',
       '4s': '4s',
       '5s': '5s',
+    },
+    animationIterationCount: {
+      'default': 'infinite',
+      'once': '1',
+      'infinite': 'infinite',
     },
   },
   variants: {

@@ -5,20 +5,4 @@
   @apply bg-green-500 text-white;
 }
 
-.no-animate {
-  animation: none;
-}
-
-.iteration-one {
-  animation-iteration-count: 1;
-}
-
-.hero__image.no-animate {
-  transform: translate3d(0, 0, 0);
-  opacity: 1;
-  @screen lg {
-    clip-path: polygon(15% 0px, 100% 0px, 100% 100%, 50px 100%);
-  }
-}
-
 @tailwind utilities;
