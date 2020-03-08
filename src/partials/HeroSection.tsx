@@ -9,7 +9,7 @@ const HeroSection = () => {
 
   // Dynamic Classes for animated elements using Computed Properties with classnames
   const elementClassesAnimation = classnames({
-    "lg:animation-delay-25ms": !disableAnimationElements,
+    "lg:animation-delay-0": !disableAnimationElements,
     "lg:animation-1s": !disableAnimationElements,
     "lg:animation-fill-both": !disableAnimationElements,
     "lg:animation-fadeInUp": !disableAnimationElements,
@@ -26,8 +26,8 @@ const HeroSection = () => {
   });
 
   React.useEffect(() => {
-    setTimeout(() => setDisableAnimationElements(true), 1100);
-    setTimeout(() => setDisableAnimationHero(true), 1950);
+    setTimeout(() => setDisableAnimationElements(true), 900);
+    setTimeout(() => setDisableAnimationHero(true), 1900);
   }, []);
 
   return (
