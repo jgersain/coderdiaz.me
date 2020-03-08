@@ -9,7 +9,7 @@ const HeroSection = () => {
 
   // Dynamic Classes for animated elements using Computed Properties with classnames
   const elementClassesAnimation = classnames({
-    "lg:animation-delay-0s": !disableAnimationElements,
+    "lg:animation-delay-25ms": !disableAnimationElements,
     "lg:animation-1s": !disableAnimationElements,
     "lg:animation-fill-both": !disableAnimationElements,
     "lg:animation-fadeInUp": !disableAnimationElements,
@@ -21,13 +21,13 @@ const HeroSection = () => {
     "lg:animation-delay-1s": !disableAnimationHero,
     "lg:animation-clipOut": !disableAnimationHero,
     "lg:animation-fill-both": !disableAnimationHero,
-    "lg:animation-10ms": !disableAnimationHero,
+    "lg:animation-1s": !disableAnimationHero,
     "no-animate": disableAnimationHero,
   });
 
   React.useEffect(() => {
-    setTimeout(() => setDisableAnimationElements(true), 900);
-    setTimeout(() => setDisableAnimationHero(true), 1900);
+    setTimeout(() => setDisableAnimationElements(true), 1100);
+    setTimeout(() => setDisableAnimationHero(true), 2000);
   }, []);
 
   return (
@@ -38,7 +38,7 @@ const HeroSection = () => {
         <div className="relative z-10 pb-8 sm:pb-16 md:pb-20 lg:max-w-xl lg:py-56 lg:pr-4 lg:w-full lg:flex lg:items-center">
           <div className="mt-12 mx-auto px-4 sm:mt-16 sm:px-6 md:px-4 md:mt-16 lg:mt-0 lg:px-0 xl:mt-28">
             <Logotype width={180} className={classnames("fill-current text-gray-500", elementClassesAnimation)} />
-            <p className={classnames("block text-dark-200 text-base uppercase pt-12 xl:text-lg", elementClassesAnimation)}>Hello, my name is</p>
+            <p className={classnames("block text-dark-200 text-base pt-12 xl:text-lg", elementClassesAnimation)}>Hello, my name is</p>
             <h1 className={classnames("block text-white font-montserrat font-bold text-3xl sm:text-4xl xl:text-5xl -mb-2", elementClassesAnimation)}>Javier Diaz</h1>
             <h2 className={classnames("block text-green-500 tracking-wide font-montserrat font-bold text-xl sm:text-3xl lg:text-3.5xl mb-6", elementClassesAnimation)}>I build stuff for the web</h2>
             <p className={classnames("block text-gray-400 xl:text-lg", elementClassesAnimation)}>I'm a Software Engineer and teacher based on Mexico City, Mexico. I build outstanding, high-quality websites and web applications.</p>
