@@ -160,7 +160,7 @@ export default withBaseLayout(IndexPage);
 
 export const pageQuery = graphql`
   query indexPage {
-    allDribbbleShot {
+    allDribbbleShot(limit: 5) {
       nodes {
         id
         cover
