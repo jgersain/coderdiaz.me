@@ -1,17 +1,17 @@
 @font-face {
   font-family: 'coderdiaz';
-  src:  url('./fonts/coderdiaz.eot?m9axju');
-  src:  url('./fonts/coderdiaz.eot?m9axju#iefix') format('embedded-opentype'),
-    url('./fonts/coderdiaz.ttf?m9axju') format('truetype'),
-    url('./fonts/coderdiaz.woff?m9axju') format('woff'),
-    url('./fonts/coderdiaz.svg?m9axju#coderdiaz') format('svg');
+  src:  url('./fonts/coderdiaz.eot?d3plk9');
+  src:  url('./fonts/coderdiaz.eot?d3plk9#iefix') format('embedded-opentype'),
+    url('./fonts/coderdiaz.ttf?d3plk9') format('truetype'),
+    url('./fonts/coderdiaz.woff?d3plk9') format('woff'),
+    url('./fonts/coderdiaz.svg?d3plk9#coderdiaz') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
 [class^="icon-"], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
+  /* use !important to prevent issues with browser extensions that change ./fonts */
   font-family: 'coderdiaz' !important;
   speak: none;
   font-style: normal;
@@ -25,6 +25,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-youtube:before {
+  content: "\e904";
+}
 .icon-dribbble:before {
   content: "\e900";
 }
