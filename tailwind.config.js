@@ -208,6 +208,9 @@ module.exports = {
   },
   variants: {
     animations: ['responsive'],
+    animationTimingFunction: ['responsive'],
+    animationDuration: ['responsive'],
+    animationDelay: ['responsive'],
   },
   plugins: [
     require('tailwindcss-animations'),
