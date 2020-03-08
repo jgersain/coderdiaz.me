@@ -26,8 +26,8 @@ const HeroSection = () => {
   });
 
   React.useEffect(() => {
-    setTimeout(() => setDisableAnimationElements(true), 900);
-    setTimeout(() => setDisableAnimationHero(true), 1900);
+    setTimeout(() => setDisableAnimationElements(true), 950);
+    setTimeout(() => setDisableAnimationHero(true), 2000);
   }, []);
 
   return (
