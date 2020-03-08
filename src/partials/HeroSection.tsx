@@ -37,14 +37,14 @@ const HeroSection = () => {
       <div className="container px-4 md:px-8 lg:h-full lg:max-w-screen-xl mx-auto">
         <div className="relative z-10 pb-8 sm:pb-16 md:pb-20 lg:max-w-xl lg:py-56 lg:pr-4 lg:w-full lg:flex lg:items-center">
           <div className="mt-12 mx-auto px-4 sm:mt-16 sm:px-6 md:px-4 md:mt-16 lg:mt-0 lg:px-0 xl:mt-28">
-            <Logotype width={180} className={classnames("fill-current text-gray-500", elementClassesAnimation)} />
-            <p className={classnames("block text-dark-200 text-base pt-12 xl:text-lg", elementClassesAnimation)}>Hello, my name is</p>
-            <h1 className={classnames("block text-white font-montserrat font-bold text-3xl sm:text-4xl xl:text-5xl -mb-2", elementClassesAnimation)}>Javier Diaz</h1>
-            <h2 className={classnames("block text-green-500 tracking-wide font-montserrat font-bold text-xl sm:text-3xl lg:text-3.5xl mb-6", elementClassesAnimation)}>I build stuff for the web</h2>
-            <p className={classnames("block text-gray-400 xl:text-lg", elementClassesAnimation)}>I'm a Software Engineer and teacher based on Mexico City, Mexico. I build outstanding, high-quality websites and web applications.</p>
-            <p className={classnames("hidden sm:block text-gray-400 mt-4 xl:text-lg", elementClassesAnimation)}>Actually, I'm creating platforms and applications using the JAMstack architecture.</p>
-            <p className={classnames("block text-gray-400 mt-4 xl:text-lg", elementClassesAnimation)}>Scroll down to find out more about my work or <a className="text-white shadow-link" href="mailto: hello@coderdiaz.me">hire me</a>.</p>
-            <div className={classnames("mt-6 flex", elementClassesAnimation)}>
+            <Logotype width={180} className={classnames("iteration-one fill-current text-gray-500", elementClassesAnimation)} />
+            <p className={classnames("iteration-one block text-dark-200 text-base pt-12 xl:text-lg", elementClassesAnimation)}>Hello, my name is</p>
+            <h1 className={classnames("iteration-one block text-white font-montserrat font-bold text-3xl sm:text-4xl xl:text-5xl -mb-2", elementClassesAnimation)}>Javier Diaz</h1>
+            <h2 className={classnames("iteration-one block text-green-500 tracking-wide font-montserrat font-bold text-xl sm:text-3xl lg:text-3.5xl mb-6", elementClassesAnimation)}>I build stuff for the web</h2>
+            <p className={classnames("iteration-one block text-gray-400 xl:text-lg", elementClassesAnimation)}>I'm a Software Engineer and teacher based on Mexico City, Mexico. I build outstanding, high-quality websites and web applications.</p>
+            <p className={classnames("iteration-one hidden sm:block text-gray-400 mt-4 xl:text-lg", elementClassesAnimation)}>Actually, I'm creating platforms and applications using the JAMstack architecture.</p>
+            <p className={classnames("iteration-one block text-gray-400 mt-4 xl:text-lg", elementClassesAnimation)}>Scroll down to find out more about my work or <a className="text-white shadow-link" href="mailto: hello@coderdiaz.me">hire me</a>.</p>
+            <div className={classnames("iteration-one mt-6 flex", elementClassesAnimation)}>
               <a className="text-gray-500 hover:text-white p-3 mr-2" aria-label="GitHub" href="https://github.com/coderdiaz">
                 <span className="text-2xl icon-github" />
               </a>

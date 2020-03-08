@@ -9,6 +9,10 @@
   animation: none;
 }
 
+.iteration-one {
+  animation-iteration-count: 1;
+}
+
 .hero__image.no-animate {
   transform: translate3d(0, 0, 0);
   opacity: 1;
