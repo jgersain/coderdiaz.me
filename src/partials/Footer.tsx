@@ -16,8 +16,11 @@ const Footer = () => {
           <a className="text-gray-700 hover:text-gray-600 p-3 mr-2" aria-label="Twitter" href="https://twitter.com/coderdiaz">
             <span className="icon-twitter text-xl" />
           </a>
-          <a className="text-gray-700 hover:text-gray-600 p-3" aria-label="Dribbble" href="https://dribbble.com/coderdiaz">
+          <a className="text-gray-700 hover:text-gray-600 p-3 mr-2" aria-label="Dribbble" href="https://dribbble.com/coderdiaz">
             <span className="icon-dribbble text-xl" />
+          </a>
+          <a className="text-gray-700 hover:text-gray-600 p-3" aria-label="Youtube" href="https://www.youtube.com/channel/UCIZS4F2zlOd1rnx6g7Jye1w">
+            <span className="icon-youtube text-xl" />
           </a>
         </div>
       </div>
