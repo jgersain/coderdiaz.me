@@ -24,8 +24,11 @@ const HeroSection = () => {
               <a className="text-gray-500 hover:text-white p-3 mr-2" aria-label="Twitter" href="https://twitter.com/coderdiaz">
                 <span className="text-2xl icon-twitter" />
               </a>
-              <a className="text-gray-500 hover:text-white p-3" aria-label="Dribbble" href="https://dribbble.com/coderdiaz">
+              <a className="text-gray-500 hover:text-white p-3 mr-2" aria-label="Dribbble" href="https://dribbble.com/coderdiaz">
                 <span className="text-2xl icon-dribbble" />
+              </a>
+              <a className="text-gray-500 hover:text-white p-3" aria-label="Youtube" href="https://www.youtube.com/channel/UCIZS4F2zlOd1rnx6g7Jye1w">
+                <span className="text-2xl icon-youtube" />
               </a>
             </div>
           </div>
