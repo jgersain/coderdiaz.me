@@ -39,9 +39,10 @@ const PostPage = ({ data, location }: IPostPageProps) => {
 
   // Configuration for Disqus
   const disqusConfig = {
+    identifier: id,
     url: location.href,
     title: frontmatter.title,
-    identifier: id,
+    language: frontmatter.language === 'es' ? 'es_MX' : 'en_US',
   };
 
   return (<>
