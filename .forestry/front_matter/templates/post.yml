@@ -19,5 +19,18 @@ fields:
   config:
     maxSize: '2'
   label: Featured Image
+- name: substract
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: Substract
+- name: tags
+  type: tag_list
+  default: []
+  label: Tags
 pages:
 - content/posts/las-5-mejores-plataformas-para-desplegar-sitios-estáticos.md
