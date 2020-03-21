@@ -58,7 +58,7 @@ const PostPage = ({ data, location }: IPostPageProps) => {
         <h1 className="text-3xl lg:text-4xl pt-12 font-montserrat lg:max-w-screen-lg md:text-center mx-auto text-gray-300 pb-5">
           {frontmatter.title}
         </h1>
-        <div className="flex justify-center text-gray-600 pb-5 uppercase">
+        <div className="flex justify-center font-bold text-gray-600 pb-5 uppercase">
           {format(new Date(frontmatter.published_at), "LLLL dd, yyyy", {
             locale: frontmatter.language === 'es' ? es : enUS,
           })}
