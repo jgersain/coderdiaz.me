@@ -14,6 +14,16 @@ fields:
   config:
     required: true
   label: Title
+- name: published_at
+  type: datetime
+  label: Published At
+  description: ''
+  config:
+    required: true
+    date_format: MM/DD/YYYY
+    time_format: h:mm
+    display_utc: false
+  default: ''
 - name: featured_image
   type: file
   config:
