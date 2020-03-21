@@ -14,5 +14,3 @@ fields:
   config:
     required: true
   label: Title
-pages:
-- content/las-mejores-5-plataformas-para-desplegar-sitios-estáticos-de-forma-sencilla.md
