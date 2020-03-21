@@ -1,0 +1,11 @@
+.__html > p {
+  @apply leading-loose relative;
+}
+
+.__html > p + p {
+  @apply mb-4;
+}
+
+.__html > p > img {
+  @apply object-cover h-full w-full;
+}
