@@ -23,7 +23,7 @@ fields:
     date_format: ''
     time_format: h:mm
     display_utc: false
-  default: now
+  default: ''
 - name: featured_image
   type: file
   config:
