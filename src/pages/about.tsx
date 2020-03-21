@@ -11,7 +11,7 @@ const AboutPage = () => {
     </Helmet>
     <section className="bg-darken h-72 md:h-72">
       <div className="container px-4 sm:px-8 md:px-8 lg:max-w-screen-lg mx-auto relative">
-        <h1 className="text-3xl text-gray-300 pt-12">About me</h1>
+        <h1 className="text-3xl lg:text-4xl font-montserrat md:text-center text-gray-300 pt-12">About me</h1>
         <div className="relative pb-72 md:pb-72 lg:pb-80">
           <picture>
             <source
