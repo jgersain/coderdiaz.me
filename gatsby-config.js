@@ -75,7 +75,7 @@ module.exports = {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 960,
-              wrapperStyle: () => `margin: 32px auto`,
+              wrapperStyle: () => `margin: 32px auto;`,
             },
           },
           `gatsby-remark-copy-linked-files`,
@@ -130,6 +130,12 @@ module.exports = {
           ],
         },
         mergeCachingHeaders: true,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-disqus`,
+      options: {
+        shortname: `coderdiaz`,
       },
     },
     {
