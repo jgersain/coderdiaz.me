@@ -9,6 +9,7 @@ tags:
 - web
 - performance
 - jamstack
+published_at: 2020-03-01T10:51:00-06:00
 
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus interdum diam in massa condimentum semper. Fusce quam ligula, finibus eu est quis, commodo rhoncus lacus. Vivamus tempus orci ac massa rhoncus, eget gravida tortor tempor. Sed quam risus, aliquet ac vulputate nec, malesuada eget leo. Morbi porttitor nulla eget libero auctor sodales. Aenean quis sapien commodo, viverra ligula at, sollicitudin diam. Mauris consequat neque sit amet ex lacinia consectetur.
