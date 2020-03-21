@@ -5,4 +5,4 @@
  */
 
 import './src/css/fonts.css';
-import './src/css/style.pcss';
+import './src/css/style.css';
