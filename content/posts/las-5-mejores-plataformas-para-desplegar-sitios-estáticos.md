@@ -1,6 +1,7 @@
 ---
 template_key: post
 title: Las 5 mejores plataformas para desplegar sitios estáticos
+featured_image: "/images/performance.png"
 
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus interdum diam in massa condimentum semper. Fusce quam ligula, finibus eu est quis, commodo rhoncus lacus. Vivamus tempus orci ac massa rhoncus, eget gravida tortor tempor. Sed quam risus, aliquet ac vulputate nec, malesuada eget leo. Morbi porttitor nulla eget libero auctor sodales. Aenean quis sapien commodo, viverra ligula at, sollicitudin diam. Mauris consequat neque sit amet ex lacinia consectetur.
