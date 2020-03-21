@@ -9,6 +9,20 @@ fields:
   label: Template Key
   hidden: true
   default: post
+- name: language
+  type: select
+  default: es
+  config:
+    required: false
+    options:
+    - es
+    - en
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Language
 - name: title
   type: text
   config:
