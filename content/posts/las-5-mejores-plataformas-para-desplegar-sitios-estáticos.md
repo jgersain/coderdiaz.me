@@ -10,7 +10,7 @@ Sed suscipit odio eu ex pulvinar, non luctus erat vehicula. Aliquam id ipsum ege
 
 Nulla in varius erat, at sodales sem. Duis viverra ipsum ut venenatis feugiat. Nam nec magna et leo tincidunt viverra eu quis velit. In maximus suscipit nisl, in laoreet massa faucibus in. In vulputate purus a diam semper suscipit. Aenean arcu urna, faucibus quis blandit eu, porta eu nunc. Curabitur mollis ante hendrerit elit aliquet, sit amet vulputate urna ornare. Integer ut tellus tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam feugiat metus ut odio cursus, id laoreet risus facilisis. Sed eros velit, gravida a lacus eu, porttitor venenatis ex.
 
-![Resultado de la prueba de performance al sitio desplegado en Netlify](/static/uploads/Screen Shot 2020-03-20 at 22.51.33.png "Prueba de Performance / Netlify")
+![Resultado de la prueba de performance al sitio desplegado en Netlify](/static/uploads/performance.png "Prueba de Performance / Netlify")
 
 Nam quis lectus urna. Integer augue diam, imperdiet quis mattis eget, pellentesque a urna. Sed sapien diam, egestas vitae volutpat id, condimentum quis leo. Duis lorem sem, lobortis nec turpis vel, tempus tincidunt felis. Aliquam et bibendum sem. Cras ultrices, purus eget tristique sodales, leo felis elementum nisi, ut sodales felis libero vitae lorem. Aenean suscipit ullamcorper mauris, vel rhoncus quam interdum vehicula. Vivamus rutrum lectus id pulvinar tristique. Aenean volutpat eget elit ac feugiat. Donec placerat vulputate ligula id bibendum. Morbi efficitur eros a congue aliquet.
 
