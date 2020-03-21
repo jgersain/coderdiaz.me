@@ -4,9 +4,11 @@ import { Helmet } from "react-helmet-async";
 import Img, { FluidObject } from "gatsby-image";
 import { Disqus } from "gatsby-plugin-disqus";
 import { format } from "date-fns";
+import { es, enUS } from "date-fns/locale";
 import withBaseLayout from "../../layouts/BaseLayout";
 
 interface IPostNode {
+  language: string;
   title: string;
   published_at: string;
   featured_image: {
@@ -28,7 +30,7 @@ interface IPostPageProps {
     }
   }
   location: {
-    href: String;
+    href: string;
   }
 }
 
@@ -44,7 +46,10 @@ const PostPage = ({ data, location }: IPostPageProps) => {
 
   return (<>
     <Helmet>
+      <html lang={frontmatter.language} />
       <title>{frontmatter.title} ― Javier Diaz: Software Engineer and teacher</title>
+      <link rel="canonical" href={location.href} />
+      <meta name="language" content={frontmatter.language === 'es' ? 'Spanish' : 'English' } />
       <meta name="description" content={frontmatter.substract} />
     </Helmet>
     <section className="bg-darken h-150">
@@ -52,8 +57,10 @@ const PostPage = ({ data, location }: IPostPageProps) => {
         <h1 className="text-3xl lg:text-4xl pt-12 font-montserrat lg:max-w-screen-lg md:text-center mx-auto text-gray-300 pb-5">
           {frontmatter.title}
         </h1>
-        <div className="flex justify-center text-gray-600 pb-5 text-lg">
-          {format(new Date(frontmatter.published_at), "LLLL dd, yyyy")}
+        <div className="flex justify-center text-gray-600 pb-5 uppercase">
+          {format(new Date(frontmatter.published_at), "LLLL dd, yyyy", {
+            locale: frontmatter.language === 'es' ? es : enUS,
+          })}
         </div>
         <div className="relative pb-72 md:pb-72 lg:pb-95">
           <Img
@@ -94,6 +101,7 @@ export const pageQuery = graphql`
       excerpt(pruneLength: 120)
       html
       frontmatter {
+        language
         title
         published_at
         featured_image {
