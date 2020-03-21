@@ -14,12 +14,3 @@ fields:
   config:
     required: true
   label: Title
-- name: content
-  type: textarea
-  default: ''
-  config:
-    required: true
-    wysiwyg: true
-    schema:
-      format: markdown
-  label: Content
