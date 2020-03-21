@@ -27,6 +27,20 @@ module.exports = {
     `gatsby-plugin-react-helmet-async`,
     `gatsby-plugin-postcss`,
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: "posts",
+        path: `${__dirname}/content/posts`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: "images",
+        path: `${__dirname}/src/images`,
+      },
+    },
+    {
       resolve: `gatsby-source-dribbble`,
       options: {
         access_token: 'c45be162c0dae8c4c3ea96a4ee734d910149c29b3f3c16abe8ed3595dc118e54',
@@ -52,6 +66,25 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          `@forestryio/gatsby-remark-normalize-paths`,
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 960,
+              wrapperStyle: () => `margin: 32px auto;`,
+            },
+          },
+          `gatsby-remark-copy-linked-files`,
+          `gatsby-remark-smartypants`,
+        ],
+      },
+    },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-robots-txt`,
       options: {
@@ -100,10 +133,17 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-disqus`,
+      options: {
+        shortname: `coderdiaz`,
+      },
+    },
+    {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: 'UA-60687969-3',
       },
     },
+    `gatsby-plugin-manifest`,
   ],
 };
