@@ -1,4 +1,25 @@
 ---
 label: Post
 hide_body: false
-fields: []
+fields:
+- name: template_key
+  type: text
+  config:
+    required: false
+  label: Template Key
+  hidden: true
+  default: post
+- name: title
+  type: text
+  config:
+    required: true
+  label: Title
+- name: content
+  type: textarea
+  default: ''
+  config:
+    required: true
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: Content
