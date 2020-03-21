@@ -49,18 +49,11 @@ const PostPage = ({ data, location }: IPostPageProps) => {
     </Helmet>
     <section className="bg-darken h-150">
       <div className="container px-4 sm:px-8 md:px-8 mx-auto relative">
-        <div className="flex pt-12 text-lg justify-center">
-          {frontmatter.tags.map(tag =>
-            <span className="text-gray-400 font-bold px-2 py-2">
-              {tag}
-            </span>
-          )}
-        </div>
-        <h1 className="text-3xl lg:text-4xl font-montserrat lg:max-w-screen-lg md:text-center mx-auto text-gray-300 pb-5">
+        <h1 className="text-3xl lg:text-4xl pt-12 font-montserrat lg:max-w-screen-lg md:text-center mx-auto text-gray-300 pb-5">
           {frontmatter.title}
         </h1>
         <div className="flex justify-center text-gray-600 pb-5 text-lg">
-          {format(new Date(frontmatter.published_at), "LLLL dd")}
+          {format(new Date(frontmatter.published_at), "LLLL dd, yyyy")}
         </div>
         <div className="relative pb-72 md:pb-72 lg:pb-95">
           <Img
@@ -70,9 +63,21 @@ const PostPage = ({ data, location }: IPostPageProps) => {
       </div>
     </section>
     <section className="min-h-screen mt-36 lg:mt-80 pb-20">
+      <div className="container px-4 sm:px-8 lg:max-w-screen-lg md:px-8 mt-8 mx-auto relative text-gray-100 text-lg leading-loose">
+        {frontmatter.substract}
+      </div>
       <div
-        className="__html container px-4 sm:px-8 md:px-8 lg:max-w-screen-lg mx-auto relative text-gray-500 text-lg"
+        className="__html container px-4 sm:px-8 md:px-8 lg:max-w-screen-lg mx-auto relative text-gray-500 text-lg mt-4"
         dangerouslySetInnerHTML={{ __html: html }} />
+      <div className="container px-4 sm:px-8 lg:max-w-screen-lg md:px-8 mt-4 mx-auto relative">
+        <div className="flex pt-8 text-lg">
+          {frontmatter.tags.map(tag =>
+            <span className="text-gray-400 font-bold px-2 py-2">
+              {`# ${tag}`}
+            </span>
+          )}
+        </div>
+      </div>
       <div className="container px-4 sm:px-8 lg:max-w-screen-lg md:px-8 mt-8 mx-auto relative">
         <Disqus config={disqusConfig} />
       </div>
