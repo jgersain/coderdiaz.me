@@ -27,6 +27,13 @@ module.exports = {
     `gatsby-plugin-react-helmet-async`,
     `gatsby-plugin-postcss`,
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: "posts",
+        path: `${__dirname}/content/posts`,
+      },
+    },
+    {
       resolve: `gatsby-source-dribbble`,
       options: {
         access_token: 'c45be162c0dae8c4c3ea96a4ee734d910149c29b3f3c16abe8ed3595dc118e54',
@@ -49,6 +56,23 @@ module.exports = {
         tailwind: true,
         content: [
           path.join(process.cwd(), `src/**/!(*.d).{ts,js,jsx,tsx}`),
+        ],
+      },
+    },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 960,
+            },
+          },
+          `gatsby-remark-copy-linked-files`,
+          `gatsby-remark-smartypants`,
         ],
       },
     },
